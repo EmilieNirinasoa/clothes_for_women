@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
-import '../../../core/error/failures.dart';
-import '../../../domain/entities/product/pagination_meta_data.dart';
-import '../../../domain/entities/product/product.dart';
-import '../../../domain/usecases/product/get_product_usecase.dart';
+import 'package:e_commerce/core/error/failures.dart';
+import 'package:e_commerce/domain/entities/product/pagination_meta_data.dart';
+import 'package:e_commerce/domain/entities/product/product.dart';
+import 'package:e_commerce/domain/usecases/product/get_product_usecase.dart';
 
 part 'product_event.dart';
 part 'product_state.dart';

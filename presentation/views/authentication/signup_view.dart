@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
-import '../../../core/constant/images.dart';
-import '../../../core/error/failures.dart';
-import '../../../core/router/app_router.dart';
-import '../../../domain/usecases/user/sign_up_usecase.dart';
+import 'package:e_commerce/core/constant/images.dart';
+import 'package:e_commerce/core/error/failures.dart';
+import 'package:e_commerce/core/router/app_router.dart';
+import 'package:e_commerce/domain/usecases/user/sign_up_usecase.dart';
 import '../../blocs/cart/cart_bloc.dart';
 import '../../blocs/user/user_bloc.dart';
 import '../../widgets/input_form_button.dart';
@@ -50,7 +50,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       },
       child: Scaffold(
           body: SingleChildScrollView(
-            physics: const BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -153,11 +153,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             confirmPasswordController.text) {
                         } else {
                           context.read<UserBloc>().add(SignUpUser(SignUpParams(
-                            firstName: firstNameController.text,
-                            lastName: lastNameController.text,
-                            email: emailController.text,
-                            password: passwordController.text,
-                          )));
+                                firstName: firstNameController.text,
+                                lastName: lastNameController.text,
+                                email: emailController.text,
+                                password: passwordController.text,
+                              )));
                         }
                       }
                     },

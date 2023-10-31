@@ -2,15 +2,15 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:eshop/domain/usecases/user/sign_out_usecase.dart';
-import 'package:eshop/domain/usecases/user/sign_up_usecase.dart';
+import 'package:e_commerce/domain/usecases/user/sign_out_usecase.dart';
+import 'package:e_commerce/domain/usecases/user/sign_up_usecase.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../../core/error/failures.dart';
-import '../../../core/usecases/usecase.dart';
-import '../../../domain/entities/user/user.dart';
-import '../../../domain/usecases/user/get_cached_user_usecase.dart';
-import '../../../domain/usecases/user/sign_in_usecase.dart';
+import 'package:e_commerce/core/error/failures.dart';
+import 'package:e_commerce/core/usecases/usecase.dart';
+import 'package:e_commerce/domain/entities/user/user.dart';
+import 'package:e_commerce/domain/usecases/user/get_cached_user_usecase.dart';
+import 'package:e_commerce/domain/usecases/user/sign_in_usecase.dart';
 
 part 'user_event.dart';
 part 'user_state.dart';

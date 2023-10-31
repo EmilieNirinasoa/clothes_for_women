@@ -1,11 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eshop/presentation/blocs/delivery_info/delivery_info_fetch/delivery_info_fetch_cubit.dart';
-import 'package:eshop/presentation/blocs/order/order_fetch/order_fetch_cubit.dart';
+import 'package:e_commerce/presentation/blocs/delivery_info/delivery_info_fetch/delivery_info_fetch_cubit.dart';
+import 'package:e_commerce/presentation/blocs/order/order_fetch/order_fetch_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/constant/images.dart';
-import '../../../../core/router/app_router.dart';
+import 'package:e_commerce/core/constant/images.dart';
+import 'package:e_commerce/core/router/app_router.dart';
 import '../../../blocs/cart/cart_bloc.dart';
 import '../../../blocs/user/user_bloc.dart';
 import '../../../widgets/other_item_card.dart';

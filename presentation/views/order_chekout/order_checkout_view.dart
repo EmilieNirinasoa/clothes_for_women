@@ -1,16 +1,16 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eshop/core/extension/string_extension.dart';
-import 'package:eshop/presentation/blocs/cart/cart_bloc.dart';
-import 'package:eshop/presentation/blocs/home/navbar_cubit.dart';
+import 'package:e_commerce/core/extension/string_extension.dart';
+import 'package:e_commerce/presentation/blocs/cart/cart_bloc.dart';
+import 'package:e_commerce/presentation/blocs/home/navbar_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
-import '../../../core/services/services_locator.dart' as di;
-import '../../../core/router/app_router.dart';
-import '../../../domain/entities/cart/cart_item.dart';
-import '../../../domain/entities/order/order_details.dart';
-import '../../../domain/entities/order/order_item.dart';
+import 'package:e_commerce/core/services/services_locator.dart' as di;
+import 'package:e_commerce/core/router/app_router.dart';
+import 'package:e_commerce/domain/entities/cart/cart_item.dart';
+import 'package:e_commerce/domain/entities/order/order_details.dart';
+import 'package:e_commerce/domain/entities/order/order_item.dart';
 import '../../blocs/delivery_info/delivery_info_fetch/delivery_info_fetch_cubit.dart';
 import '../../blocs/order/order_add/order_add_cubit.dart';
 import '../../widgets/input_form_button.dart';
@@ -232,7 +232,8 @@ class OrderCheckoutView extends StatelessWidget {
                             .state
                             .selectedDeliveryInformation ==
                         null) {
-                      EasyLoading.showError("Error \nPlease select delivery add your delivery information");
+                      EasyLoading.showError(
+                          "Error \nPlease select delivery add your delivery information");
                     } else {
                       context.read<OrderAddCubit>().addOrder(OrderDetails(
                           id: '',

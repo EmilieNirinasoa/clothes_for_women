@@ -2,12 +2,12 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
-import '../../../core/error/failures.dart';
-import '../../../core/usecases/usecase.dart';
-import '../../../domain/entities/category/category.dart';
-import '../../../domain/usecases/category/filter_category_usecase.dart';
-import '../../../domain/usecases/category/get_cached_category_usecase.dart';
-import '../../../domain/usecases/category/get_remote_category_usecase.dart';
+import 'package:e_commerce/core/error/failures.dart';
+import 'package:e_commerce/core/usecases/usecase.dart';
+import 'package:e_commerce/domain/entities/category/category.dart';
+import 'package:e_commerce/domain/usecases/category/filter_category_usecase.dart';
+import 'package:e_commerce/domain/usecases/category/get_cached_category_usecase.dart';
+import 'package:e_commerce/domain/usecases/category/get_remote_category_usecase.dart';
 
 part 'category_event.dart';
 part 'category_state.dart';

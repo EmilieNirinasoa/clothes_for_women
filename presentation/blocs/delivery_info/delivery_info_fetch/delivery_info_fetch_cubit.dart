@@ -1,12 +1,12 @@
 import 'package:bloc/bloc.dart';
-import 'package:eshop/domain/usecases/delivery_info/clear_local_delivery_info_usecase.dart';
-import 'package:eshop/domain/usecases/delivery_info/get_selected_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/clear_local_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/get_selected_delivery_info_usecase.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../../../core/usecases/usecase.dart';
-import '../../../../domain/entities/user/delivery_info.dart';
-import '../../../../domain/usecases/delivery_info/get_cached_delivery_info_usecase.dart';
-import '../../../../domain/usecases/delivery_info/get_remote_delivery_info_usecase.dart';
+import 'package:e_commerce/core/usecases/usecase.dart';
+import 'package:e_commerce/domain/entities/user/delivery_info.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/get_cached_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/get_remote_delivery_info_usecase.dart';
 
 part 'delivery_info_fetch_state.dart';
 

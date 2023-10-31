@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/constant/images.dart';
-import '../../../../core/error/failures.dart';
-import '../../../../core/router/app_router.dart';
-import '../../../../domain/entities/cart/cart_item.dart';
+import 'package:e_commerce/core/constant/images.dart';
+import 'package:e_commerce/core/error/failures.dart';
+import 'package:e_commerce/core/router/app_router.dart';
+import 'package:e_commerce/domain/entities/cart/cart_item.dart';
 import '../../../blocs/cart/cart_bloc.dart';
 import '../../../widgets/cart_item_card.dart';
 import '../../../widgets/input_form_button.dart';
@@ -81,7 +81,7 @@ class _CartViewState extends State<CartView> {
                             if (state is CartLoading && state.cart.isEmpty) {
                               return const CartItemCard();
                             } else {
-                              if(state.cart.length<index){
+                              if (state.cart.length < index) {
                                 return const CartItemCard();
                               }
                               return CartItemCard(

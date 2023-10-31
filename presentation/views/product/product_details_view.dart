@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../../../domain/entities/cart/cart_item.dart';
-import '../../../../../domain/entities/product/price_tag.dart';
-import '../../../../../domain/entities/product/product.dart';
-import '../../../core/router/app_router.dart';
+import 'package:e_commerce/domain/entities/cart/cart_item.dart';
+import 'package:e_commerce/domain/entities/product/price_tag.dart';
+import 'package:e_commerce/domain/entities/product/product.dart';
+import 'package:e_commerce/core/router/app_router.dart';
 import '../../blocs/cart/cart_bloc.dart';
 import '../../widgets/input_form_button.dart';
 

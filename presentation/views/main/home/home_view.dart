@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shimmer/shimmer.dart';
 
-import '../../../../core/constant/images.dart';
-import '../../../../core/error/failures.dart';
-import '../../../../core/router/app_router.dart';
-import '../../../../domain/usecases/product/get_product_usecase.dart';
+import 'package:e_commerce/core/constant/images.dart';
+import 'package:e_commerce/core/error/failures.dart';
+import 'package:e_commerce/core/router/app_router.dart';
+import 'package:e_commerce/domain/usecases/product/get_product_usecase.dart';
 import '../../../blocs/filter/filter_cubit.dart';
 import '../../../blocs/product/product_bloc.dart';
 import '../../../blocs/user/user_bloc.dart';
@@ -30,9 +30,7 @@ class _HomeViewState extends State<HomeView> {
     double scrollPercentage = 0.7;
     if (currentScroll > (maxScroll * scrollPercentage)) {
       if (context.read<ProductBloc>().state is ProductLoaded) {
-        context
-            .read<ProductBloc>()
-            .add(const GetMoreProducts());
+        context.read<ProductBloc>().add(const GetMoreProducts());
       }
     }
   }
