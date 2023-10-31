@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:eshop/core/usecases/usecase.dart';
+import 'package:e_commerce/core/usecases/usecase.dart';
 
 import '../../../../core/error/failures.dart';
 import '../../core/network/network_info.dart';

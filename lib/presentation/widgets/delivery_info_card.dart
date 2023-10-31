@@ -1,4 +1,4 @@
-import 'package:eshop/core/extension/string_extension.dart';
+import 'package:e_commerce/core/extension/string_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shimmer/shimmer.dart';
@@ -22,7 +22,9 @@ class DeliveryInfoCard extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 10),
         child: InkWell(
           onTap: () {
-            context.read<DeliveryInfoActionCubit>().selectDeliveryInfo(deliveryInformation!);
+            context
+                .read<DeliveryInfoActionCubit>()
+                .selectDeliveryInfo(deliveryInformation!);
           },
           child: OutlineLabelCard(
             title: '',

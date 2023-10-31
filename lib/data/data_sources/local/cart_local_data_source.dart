@@ -1,4 +1,4 @@
-import 'package:eshop/core/error/failures.dart';
+import 'package:e_commerce/core/error/failures.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../models/cart/cart_item_model.dart';
@@ -53,7 +53,7 @@ class CartLocalDataSourceImpl implements CartLocalDataSource {
   }
 
   @override
-  Future<bool> clearCart()async {
+  Future<bool> clearCart() async {
     return sharedPreferences.remove(cachedCart);
   }
 }

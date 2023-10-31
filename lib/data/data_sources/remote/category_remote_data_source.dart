@@ -1,4 +1,4 @@
-import 'package:eshop/core/error/failures.dart';
+import 'package:e_commerce/core/error/failures.dart';
 import 'package:http/http.dart' as http;
 
 import '../../../core/constant/strings.dart';

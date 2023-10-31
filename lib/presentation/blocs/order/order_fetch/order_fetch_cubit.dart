@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:eshop/domain/usecases/order/clear_local_order_usecase.dart';
+import 'package:e_commerce/domain/usecases/order/clear_local_order_usecase.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../../../../core/usecases/usecase.dart';

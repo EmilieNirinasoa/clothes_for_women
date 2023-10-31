@@ -1,4 +1,4 @@
-import 'package:eshop/core/constant/images.dart';
+import 'package:e_commerce/core/constant/images.dart';
 import 'package:flutter/material.dart';
 
 class InputFormButton extends StatelessWidget {

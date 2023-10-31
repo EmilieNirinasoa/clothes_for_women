@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:eshop/core/usecases/usecase.dart';
+import 'package:e_commerce/core/usecases/usecase.dart';
 
 import '../../../../core/error/failures.dart';
 import '../../core/network/network_info.dart';
@@ -57,8 +57,8 @@ class UserRepositoryImpl implements UserRepository {
   }
 
   Future<Either<Failure, User>> _authenticate(
-      _DataSourceChooser getDataSource,
-      ) async {
+    _DataSourceChooser getDataSource,
+  ) async {
     if (await networkInfo.isConnected) {
       try {
         final remoteResponse = await getDataSource();
@@ -72,5 +72,4 @@ class UserRepositoryImpl implements UserRepository {
       return Left(NetworkFailure());
     }
   }
-
 }

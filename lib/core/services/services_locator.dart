@@ -1,8 +1,8 @@
-import 'package:eshop/domain/usecases/delivery_info/clear_local_delivery_info_usecase.dart';
-import 'package:eshop/domain/usecases/delivery_info/edit_delivery_info_usecase.dart';
-import 'package:eshop/domain/usecases/delivery_info/get_selected_delivery_info_usecase.dart';
-import 'package:eshop/domain/usecases/delivery_info/select_delivery_info_usecase.dart';
-import 'package:eshop/domain/usecases/order/clear_local_order_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/clear_local_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/edit_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/get_selected_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/select_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/order/clear_local_order_usecase.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;

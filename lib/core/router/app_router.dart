@@ -1,4 +1,5 @@
-import 'package:eshop/presentation/views/main/home/filter/filter_view.dart';
+// ignore: depend_on_referenced_packages
+import 'package:e_commerce/presentation/views/main/home/filter/filter_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../domain/entities/cart/cart_item.dart';

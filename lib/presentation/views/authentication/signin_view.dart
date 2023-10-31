@@ -1,5 +1,5 @@
-import 'package:eshop/presentation/blocs/home/navbar_cubit.dart';
-import 'package:eshop/presentation/blocs/order/order_fetch/order_fetch_cubit.dart';
+import 'package:e_commerce/presentation/blocs/home/navbar_cubit.dart';
+import 'package:e_commerce/presentation/blocs/order/order_fetch/order_fetch_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';

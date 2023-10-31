@@ -1,4 +1,4 @@
-import 'package:eshop/domain/entities/product/price_tag.dart';
+import 'package:e_commerce/domain/entities/product/price_tag.dart';
 
 class PriceTagModel extends PriceTag {
   PriceTagModel({
@@ -24,8 +24,8 @@ class PriceTagModel extends PriceTag {
       };
 
   factory PriceTagModel.fromEntity(PriceTag entity) => PriceTagModel(
-    id: entity.id,
-    name: entity.name,
-    price: entity.price,
-  );
+        id: entity.id,
+        name: entity.name,
+        price: entity.price,
+      );
 }
