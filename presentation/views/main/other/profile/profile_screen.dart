@@ -1,7 +1,7 @@
-import 'package:eshop/core/constant/images.dart';
+import 'package:e_commerce/core/constant/images.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../domain/entities/user/user.dart';
+import 'package:e_commerce/domain/entities/user/user.dart';
 import '../../../../widgets/input_form_button.dart';
 import '../../../../widgets/input_text_form_field.dart';
 

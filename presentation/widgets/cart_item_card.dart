@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:eshop/domain/entities/cart/cart_item.dart';
+import 'package:e_commerce/domain/entities/cart/cart_item.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
-import '../../core/router/app_router.dart';
+import 'package:e_commerce/core/router/app_router.dart';
 
 class CartItemCard extends StatelessWidget {
   final CartItem? cartItem;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../core/constant/images.dart';
+import 'package:e_commerce/core/constant/images.dart';
 import '../../../../blocs/order/order_fetch/order_fetch_cubit.dart';
 import '../../../../widgets/order_info_card.dart';
 

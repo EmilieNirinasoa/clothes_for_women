@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:eshop/domain/usecases/delivery_info/clear_local_delivery_info_usecase.dart';
-import 'package:eshop/domain/usecases/delivery_info/get_selected_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/clear_local_delivery_info_usecase.dart';
+import 'package:e_commerce/domain/usecases/delivery_info/get_selected_delivery_info_usecase.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../../../../core/usecases/usecase.dart';
