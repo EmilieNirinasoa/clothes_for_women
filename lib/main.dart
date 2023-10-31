@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(199, 255, 3, 15)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -84,7 +86,10 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text("Elena Boutique"),
+        title: Text(
+          "EShop",
+          style: TextStyle(color: Color.fromARGB(235, 253, 252, 252)),
+        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -94,7 +99,10 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text("Vetements",
                 style: TextStyle(fontWeight: FontWeight.bold)),
           ),
-          Text("A vendre"),
+          Text(
+            "A vendre",
+            style: TextStyle(color: Colors.grey[500]),
+          ),
         ],
       ),
     );
